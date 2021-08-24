@@ -13,7 +13,7 @@ import Stats from '../components/layouts/stats/stats'
 import * as content from '../page-content/content-keto'
 import { sharedAdopters } from '../page-content/shared/content-adopters'
 import { opensourceQuickstart } from '../page-content/shared/content-opensource'
-import { additionalQuotes } from '../page-content/shared/content-quotes'
+import { ketoQuotes } from '../page-content/shared/content-quotes'
 import { sharedStats } from '../page-content/shared/content-stats'
 
 const KetoPage = () => (
@@ -22,7 +22,7 @@ const KetoPage = () => (
     <Hero {...content.hero} />
     <Newsletter preselect="keto" />
     <FeatureList {...content.featureList} />
-    <Quotes {...additionalQuotes} />
+    <Quotes {...ketoQuotes} />
     <Adopters {...sharedAdopters} />
     <Stats {...sharedStats} />
     <FeatureContent {...content.featureContentCoding} />
