@@ -124,18 +124,6 @@ export const hydraQuotes: QuoteProps = {
       big: true,
       description: (
         <>
-          At Discogs we use Ory to handle authentication and authorization for
-          over 8 million music enthusiasts across our applications. It allows us
-          to focus on building the largest music database and marketplace,
-          rather than reinvent the wheel.
-        </>
-      ),
-      person: `Corey Burmeister`,
-      jobTitle: `Author, Discogs`
-    },
-    {
-      description: (
-        <>
           At Sainsbury’s Tech we use Ory tools to power our identity platform.
           We needed a feature complete OAuth provider which can operate securely
           at scale and Ory Hydra fit the bill perfectly.
@@ -143,7 +131,7 @@ export const hydraQuotes: QuoteProps = {
       ),
       person: `Paul Harman`,
       jobTitle: `Engineering Manager, Sainsbury’s Tech`
-    },
+    },    
     {
       description: (
         <>
@@ -154,6 +142,18 @@ export const hydraQuotes: QuoteProps = {
       ),
       person: `Benjamin Kristensen`,
       jobTitle: `Senior Software Engineer, Enode`
-    }
+    },
+    {
+      description: (
+        <>
+          At Discogs we use Ory to handle authentication and authorization for
+          over 8 million music enthusiasts across our applications. It allows us
+          to focus on building the largest music database and marketplace,
+          rather than reinvent the wheel.
+        </>
+      ),
+      person: `Corey Burmeister`,
+      jobTitle: `Author, Discogs`
+    },
   ]
 }
