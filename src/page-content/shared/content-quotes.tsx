@@ -124,8 +124,7 @@ export const hydraQuotes: QuoteProps = {
       big: true,
       description: (
         <>
-          At Sainsbury’s Tech we use Ory tools to power our identity platform.
-          We needed a feature complete OAuth provider which can operate securely
+          At Sainsbury’s Tech, we needed a feature-complete OAuth provider which can operate securely
           at scale and Ory Hydra fit the bill perfectly.
         </>
       ),
