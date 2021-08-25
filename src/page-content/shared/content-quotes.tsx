@@ -156,3 +156,41 @@ export const hydraQuotes: QuoteProps = {
     }
   ]
 }
+
+export const oathkeeperQuotes: QuoteProps = {
+  id: 'oathkeeper.quotes',
+  quotes: [
+    {
+      big: true,
+      description: (
+        <>
+          With Ory, I can build custom and secure ID infrastructure and APIs
+          that fit perfectly into my client's ever-evolving cloud environments.
+        </>
+      ),
+      person: `Ken Adler`,
+      jobTitle: `Identity & Infosec, Thoughtworks`
+    },
+    {
+      description: (
+        <>
+          Ory made it simple to add stable, secure user management and access
+          control to our systems. No more reinventing the wheel!
+        </>
+      ),
+      person: `Bill Monkman`,
+      jobTitle: `Chief Architect, Commit`
+    },
+    {
+      description: (
+        <>
+          We enjoy using Ory because of the simplicity to integrate thanks to
+          its modularity, its active and vocal developer base, and the extent
+          and ease by which Ory tools can be configured.
+        </>
+      ),
+      person: `Matt Brown`,
+      jobTitle: `Bioinformatician, Dante Labs`
+    }
+  ]
+}
