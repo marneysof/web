@@ -124,13 +124,13 @@ export const hydraQuotes: QuoteProps = {
       big: true,
       description: (
         <>
-          At Sainsbury’s Tech, we needed a feature-complete OAuth provider which can operate securely
-          at scale and Ory Hydra fit the bill perfectly.
+          At Sainsbury’s Tech, we needed a feature-complete OAuth provider which
+          can operate securely at scale and Ory Hydra fit the bill perfectly.
         </>
       ),
       person: `Paul Harman`,
       jobTitle: `Engineering Manager, Sainsbury’s Tech`
-    },    
+    },
     {
       description: (
         <>
@@ -153,6 +153,6 @@ export const hydraQuotes: QuoteProps = {
       ),
       person: `Corey Burmeister`,
       jobTitle: `Author, Discogs`
-    },
+    }
   ]
 }
