@@ -291,7 +291,7 @@ export const collaborators: TeamProps = {
         },
         {
           network: SocialNetworks.web,
-          href: ' https://think-speak-transform.com/'
+          href: 'https://think-speak-transform.com/'
         }
       ],
       img: (
