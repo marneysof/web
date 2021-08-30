@@ -287,10 +287,6 @@ export const collaborators: TeamProps = {
       social: [
         {
           network: SocialNetworks.linkedin,
-          href: 'https://de.linkedin.com/in/pascalmorgan'
-        },
-        {
-          network: SocialNetworks.web,
           href: 'https://www.linkedin.com/in/pascalmorgan'
         }
       ],
