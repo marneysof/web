@@ -288,6 +288,10 @@ export const collaborators: TeamProps = {
         {
           network: SocialNetworks.linkedin,
           href: 'https://www.linkedin.com/in/pascalmorgan'
+        },
+        {
+          network: SocialNetworks.web,
+          href: ' https://think-speak-transform.com/'
         }
       ],
       img: (
