@@ -1,23 +1,10 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 
-import Button from '../components/freestanding/button/button'
 import { PropTypes as FormProps } from '../components/layouts/hero/hero-form'
 import { PropTypes as QuickstartProps } from '../components/layouts/quickstart/quickstart'
 import { PropTypes as SeoProps } from '../components/layouts/seo/seo'
 
-const SlackLogo = <i className={' ph-slack-logo-fill themed-primary size32'} />
-const ChatsCircle = (
-  <i className={'ph-chats-circle-fill themed-primary size32'} />
-)
-const Fingerprint = (
-  <i className={' ph-fingerprint-fill themed-primary size32'} />
-)
-const Key = <i className={' ph-key-bold themed-primary size32'} />
-const UsersBold = <i className={'ph-users-bold themed-primary size32'} />
-const MapTrifold = (
-  <i className={' ph-map-trifold-bold themed-primary size32'} />
-)
 export const seo: SeoProps = {
   description: 'Identity In Modern Applications - Download the free eBook.',
   title: "Ory O'Reilly - Identity In Modern Applications  Book"
@@ -38,14 +25,21 @@ export const form: FormProps = {
         type: 'hidden',
         name: 'retURL',
         value:
-          'https://ory.sh/resources/oreilly/identity_in_modern_applications-ory.pdf'
+          'https://ory.sh/resources/oreilly/identity_in_modern_applications-ory.pdf?mtm_campaign=oreilly-download'
       },
       { type: 'hidden', name: 'lead_source', value: 'Oreilly Report' },
+      {
+        id: 'first_name',
+        name: 'first_name',
+        type: 'text',
+        placeholder: 'First Name',
+        required: true
+      },
       {
         id: 'last_name',
         name: 'last_name',
         type: 'text',
-        placeholder: 'Name',
+        placeholder: 'Last Name',
         required: true
       },
       {
@@ -69,6 +63,13 @@ export const form: FormProps = {
         placeholder: 'Position'
       },
       {
+        id: 'marketingoptin',
+        name: '00N5e00000cv3rN',
+        type: 'checkbox',
+        label: ' Keep me in the loop on Ory news.',
+        value: '1'
+      },
+      {
         type: 'submit',
         name: 'submit',
         value: 'Download Report'
@@ -87,6 +88,7 @@ export const form: FormProps = {
 
 export const quickstart: QuickstartProps = {
   id: 'oreilly.quickstart',
+  slant: true,
   title: <>Identity In Modern Applications</>,
   description: (
     <>
@@ -95,16 +97,15 @@ export const quickstart: QuickstartProps = {
       in creating secure apps and systems.
     </>
   ),
-  buttons: (
-    <>
-      <Button style={'filled'} to={`#${form.id}`}>
-        Get the report
-      </Button>
-    </>
-  ),
+  buttons: [
+    {
+      ctaTitle: 'Download the report',
+      style: 'filled',
+      to: `#${form.id}`
+    }
+  ],
   content: [
     {
-      icon: Fingerprint,
       title: <>Mapping Identity</>,
       description: (
         <>
@@ -114,7 +115,6 @@ export const quickstart: QuickstartProps = {
       )
     },
     {
-      icon: MapTrifold,
       title: <>Examples</>,
       description: (
         <>
@@ -124,7 +124,6 @@ export const quickstart: QuickstartProps = {
       )
     },
     {
-      icon: Key,
       title: <>AuthN/AuthZ</>,
       description: (
         <>
@@ -134,7 +133,6 @@ export const quickstart: QuickstartProps = {
       )
     },
     {
-      icon: UsersBold,
       title: <>Single Or Multi?</>,
       description: (
         <>

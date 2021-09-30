@@ -6,89 +6,12 @@ import { PropTypes as JobsProps } from '../components/layouts/jobs/jobs-list'
 import { PropTypes as QuickstartProps } from '../components/layouts/quickstart/quickstart'
 import { PropTypes as SeoProps } from '../components/layouts/seo/seo'
 
-const ChatsCircle = (
-  <i className={'ph-chats-circle-fill themed-primary size32'} />
-)
-const BookOpen = <i className={'ph-book-open-fill base-white size24'} />
-const SlackLogo = <i className={' ph-slack-logo-fill themed-primary size32'} />
 const ArrowRight = <i className={'ph-arrow-right-bold themed-primary size16'} />
-const Code = <i className={'ph-code-fill themed-primary size32'} />
-const CirclesThreePlus = (
-  <i className={'ph-circles-three-plus-fill themed-primary size32'} />
-)
-const GitPR = <i className={'ph-git-pull-request-fill themed-primary size32'} />
-const RocketLaunch = (
-  <i className={' ph-rocket-launch-fill themed-primary size32'} />
-)
 
 export const seo: SeoProps = {
   description:
     'Build scalable open source software at one of the fastest growing startups in the space of cloud identity',
   title: 'Join the Ory Team - Ory Jobs'
-}
-
-export const hero: HeroFeatureProps = {
-  id: 'jobs.herofeatures',
-  thin: true,
-  title: 'Work on things that matter',
-  description: (
-    <>
-      Ory builds open source software because the internet needs a secure
-      infrastructure to authenticate and authorize access. And we'd like your
-      help!
-    </>
-  ),
-
-  textbox: [
-    {
-      icon: Code,
-      title: <>Open Source Spirit</>,
-      description: (
-        <>
-          Help us create an open and free standard for authentication and
-          authorization that is available to everyone. Much of the work we do is
-          released to the public domain. Part of Ory is a tremendous community
-          that you will fall in love with.
-        </>
-      )
-    },
-    {
-      icon: GitPR,
-      title: <>Freedom</>,
-      description: (
-        <>
-          We feel that we should work with the best software out there and
-          support those that build it - Ory is using open source for almost
-          everything. Work with technology you love and keep your skills sharp
-          on a modern stack, always at the forefront of change.
-        </>
-      )
-    },
-    {
-      icon: CirclesThreePlus,
-      title: <>Do What Matters</>,
-      description: (
-        <>
-          Everyone working at Ory has a passion for the work we do. We foster a
-          culture of flat hierarchy, where everyone has a voice and we seek
-          input from the whole company on key decisions. At Ory, people care
-          about what they are building. Build something that has real value.
-        </>
-      )
-    },
-    {
-      icon: RocketLaunch,
-      title: <>Play A Vital Role</>,
-      description: (
-        <>
-          You will be working in a fast-moving startup, breaking up a market
-          that has been plagued by corporate mold for far too long. At Ory you
-          won’t be just another employee - You have a direct impact on our
-          success and the team will support you and depend on you.
-        </>
-      )
-    }
-  ]
 }
 
 export const jobs: JobsProps = {
@@ -103,7 +26,74 @@ export const jobs: JobsProps = {
   )
 }
 
-export const values: HeroFeatureProps = {
+export const hero: HeroFeatureProps = {
+  id: 'jobs.herofeatures',
+  title: 'Work on things that matter',
+  buttons: [
+    {
+      ctaTitle: 'Open positions',
+      style: 'filled',
+      to: `#${jobs.id}`
+    }
+  ],
+  description: (
+    <>
+      Ory builds open source software because the Internet needs secure
+      infrastructure to authenticate and authorize access. And we'd like your
+      help!
+    </>
+  ),
+
+  features: [
+    {
+      title: <>Open Source Spirit</>,
+      description: (
+        <>
+          Help us create an open and free standard for authentication and
+          authorization that is available to everyone. Much of the work we do is
+          released to the public domain. Ory is rooted in a tremendous open
+          source community that you will fall in love with.
+        </>
+      )
+    },
+    {
+      title: <>Freedom</>,
+      description: (
+        <>
+          We feel that we should work with the best software out there and
+          support those that build it - Ory is using open source for almost
+          everything. Work with technology you love and keep your skills sharp
+          on a modern stack, always at the forefront of change.
+        </>
+      )
+    },
+    {
+      title: <>Do What Matters</>,
+      description: (
+        <>
+          Everyone working at Ory has a passion for the work we do. We foster a
+          culture of flat hierarchy, where everyone has a voice and we seek
+          input from the whole company on key decisions. At Ory, people care
+          about what they are building. Help us build something that has real
+          value.
+        </>
+      )
+    },
+    {
+      title: <>Play A Vital Role</>,
+      description: (
+        <>
+          You will be working at a fast-moving startup, breaking up a market
+          that has been plagued by corporate mold for far too long. At Ory you
+          won’t be just another employee - you will have a direct impact on our
+          success with the support and trust of your team.
+        </>
+      )
+    }
+  ]
+}
+
+/*export const values: HeroFeatureProps = {
   id: 'jobs.values',
   thin: true,
   small: true,
@@ -115,11 +105,11 @@ export const values: HeroFeatureProps = {
         <>
           Building an enterprise-grade, globally scalable, secure infrastructure
           around Identity Management means thinking out-of-the-box. We need to
-          embrace leading-edge technology, new ways of thinking, and redefining
-          business processes to innovate the market on how to solve some of its
-          most fundamental challenges. Ory's aim is no less than to lead the
-          market in state-of-the-art solutions for future-proof Identity
-          Management. Innovation is part of our DNA.
+          embrace leading-edge technology and new ways of thinking to find
+          innovative solutions to some of the market's most fundamental
+          challenges. Ory's aim is no less than to lead the market in
+          state-of-the-art solutions for future-proof Identity Management.
+          Innovation is part of our DNA.
         </>
       )
     },
@@ -127,12 +117,12 @@ export const values: HeroFeatureProps = {
       title: <>Commitment</>,
       description: (
         <>
-          At Ory, we truly believe in building great products. Products, that
-          matter. Products, that are relevant for our customers. Products, that
+          At Ory, we truly believe in building great products: Products that
+          matter. Products that are relevant for our customers. Products that
           help customers scale their business without limits. We take pride in
-          breaking boundaries, constantly improving, and aiming to produce great
-          work in order to win the market. Creating value for our customers
-          comes first. Our mission is excellence.
+          pushing boundaries, constantly improving, and producing great work in
+          order to lead the market. Creating value for our customers comes
+          first. Our mission is excellence.
         </>
       )
     },
@@ -143,10 +133,10 @@ export const values: HeroFeatureProps = {
           We are passionate about creating and delivering meaningful work. This
           is only possible as a team: Ory as a company, Ory together with our
           customers, and Ory as part of a larger community. Giving back to the
-          community we serve also means being committed to working hard to take
-          on challenges, approaching problems with humility – and deep respect
-          for diversity in business, culture, and society. Together we build the
-          products that can serve a purpose.
+          community we serve entails a willingness to take on challenges and
+          approach problems with humility and deep respect for diversity in
+          business, culture, and society. Together we build products that serve
+          a purpose.
         </>
       )
     },
@@ -154,19 +144,20 @@ export const values: HeroFeatureProps = {
       title: <>Honesty</>,
       description: (
         <>
-          We can contribute most effectively when we communicate openly and
-          honestly - learning both from our successes and our failures.
-          Listening to our customers and or employees. Continuously learning,
-          adapting, and growing our business on a healthy foundation. Openness
-          and sincerity are the heart and soul of Ory.
+          We contribute most effectively when we communicate openly and honestly
+          - learning equally from success and failure. Listening to our
+          customers and our employees. Continuously learning, adapting, and
+          growing our business on a foundation of trust and transparency.
+          Openness and sincerity are the heart and soul of Ory.
         </>
       )
     }
   ]
-}
+}*/
 
 export const quickstart: QuickstartProps = {
   id: 'jobs.quickstart',
+  slant: true,
   title: <>Be part of a global community</>,
   description: (
     <>
@@ -175,20 +166,15 @@ export const quickstart: QuickstartProps = {
       open source contributors to work with us full time.
     </>
   ),
-  buttons: (
-    <>
-      <Button
-        style={'filled'}
-        to={'/docs/ecosystem/community'}
-        iconRight={BookOpen}
-      >
-        Community Overview
-      </Button>
-    </>
-  ),
+  buttons: [
+    {
+      ctaTitle: 'Our Community',
+      style: 'filled',
+      to: '/docs/ecosystem/community'
+    }
+  ],
   content: [
     {
-      icon: SlackLogo,
       title: <>Developer Chat on Slack</>,
       description: (
         <>
@@ -207,7 +193,6 @@ export const quickstart: QuickstartProps = {
       )
     },
     {
-      icon: ChatsCircle,
       title: <>GitHub Discussions</>,
       description: (
         <>
